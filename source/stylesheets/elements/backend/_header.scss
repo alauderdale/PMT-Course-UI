@@ -1,0 +1,58 @@
+.backend-main-nav{
+	background-color:$primary-color;
+	padding:20px 0;
+		ul{
+			li{
+				font-family: $bold-font-name;
+				a{
+					&.navbar-item{
+						margin:0 5px;
+						color:rgba(255,255,255,.7);
+						font-size:1em;
+						&:active,&:focus{
+							color:rgba(255,255,255,.7)!important;
+						}
+						&:hover{
+							color:white;
+							background: transparent;
+							@include transition-duration(.2s);
+						}
+					}
+				}	
+				&.active{
+					a.navbar-item{
+						background-color: transparent;
+						color:rgba(255,255,255,1);
+						&:hover{
+							color:white;
+							background: transparent;
+						}
+					}
+				}			
+			}
+		}
+	.logo{
+	  background:url(../images/logo_white.png);
+	  background-size:100%;
+	  width: 135px;
+	  height:26px;
+	  display:block;
+	  position:relative;
+	  top:-4px;
+	}
+
+}
+
+.navbar-default .navbar-toggle{
+	border:none;
+	background:none!important;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color:white;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border:none;
+	box-shadow:none;
+}
