@@ -20,3 +20,13 @@
 //   @include breakpoint(md) {
 //     ...
 //   }
+
+
+  @include breakpoint(sm) {
+    .pull-left-sm{
+      float: left!important;
+    }
+    .btn-block-sm{
+      width: 100%;
+    }
+  }
